@@ -1,13 +1,13 @@
+
 function count() {
-    for (let i = 0; i < 5; i++) {
-        function clos(x) {
+    for (var i = 0; i < 6; i++) {
+        function close(i) {
             setTimeout(function () {
-                console.log(x)
+                console.log(i);
+
             }, 1000 * i)
         }
-        clos(i)
-
+ close(i);
     }
 }
 count()
-
